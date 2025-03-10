@@ -318,4 +318,23 @@ footer {
     footer {
         padding: 10px;
     }
+    .contenido-sobre-mi {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.foto-perro {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto-perro:hover {
+    transform: scale(1.05);
+}
 }
