@@ -421,3 +421,13 @@ main {
     line-height: 1.6;
     color: #333;
 }
+/* Estilos específicos para laptops */
+@media (min-width: 768px) {
+    .boton-experiencia {
+        font-size: 1.2em; /* Tamaño de fuente más grande en laptops */
+    }
+
+    .info-experiencia {
+        max-height: 400px; /* Altura máxima mayor en laptops */
+    }
+}
