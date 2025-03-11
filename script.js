@@ -34,4 +34,14 @@ document.getElementById('contacto-form').addEventListener('submit', function(eve
     event.preventDefault();
     alert('Gracias por tu mensaje. Me pondré en contacto contigo pronto.');
     this.reset();
+
 });
+function toggleInfo(id) {
+    const element = document.getElementById(id);
+    if (element.style.display === 'block') {
+        element.style.display = 'none';
+    } else {
+        element.style.display = 'block';
+        element.classList.add('mostrar');
+    }
+}
