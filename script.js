@@ -38,10 +38,13 @@ document.getElementById('contacto-form').addEventListener('submit', function(eve
 });
 function toggleInfo(id) {
     const element = document.getElementById(id);
-    if (element.style.display === 'block') {
-        element.style.display = 'none';
+    if (element.classList.contains('mostrar')) {
+        element.classList.remove('mostrar');
     } else {
-        element.style.display = 'block';
+        // Cerrar cualquier otro detalle abierto
+        document.querySelectorAll('.info-experiencia.mostrar').forEach(info => {
+            info.classList.remove('mostrar');
+        });
         element.classList.add('mostrar');
     }
 }
