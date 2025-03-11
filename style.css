@@ -347,6 +347,11 @@ footer {
 .contenido-objetivo p {
     margin-bottom: 20px;
 }
+/* Ajustes generales para el desplazamiento */
+main {
+    padding-bottom: 100px; /* Espacio para el footer */
+}
+
 /* Estilos para la sección de Experiencia Profesional */
 .experiencia-lista {
     max-width: 800px;
@@ -384,6 +389,8 @@ footer {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: none; /* Oculto por defecto */
+    max-height: 300px; /* Altura máxima */
+    overflow-y: auto; /* Scroll interno si el contenido es muy largo */
 }
 
 .info-experiencia.mostrar {
