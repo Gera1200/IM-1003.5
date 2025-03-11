@@ -337,4 +337,14 @@ footer {
 .foto-perro:hover {
     transform: scale(1.05);
 }
+    .contenido-objetivo {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.contenido-objetivo p {
+    margin-bottom: 20px;
+}
 }
